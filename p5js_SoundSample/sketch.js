@@ -33,5 +33,11 @@ function draw() {
     fill(119, 54, 150, 30);
     ellipse(width / 2, height / 2, scale, scale);
     // ellipse(width / 2, height / 2, width, width);
+    
+    scale = map(amp.getLevel(), 0, 0.5, 10, width);
+    // Draw the circle based on the volume
+    fill(119, 54, 150, 30);
+    ellipse(width / 2, height / 2, scale, scale);
+    // ellipse(width / 2, height / 2, width, width);
 
 }
