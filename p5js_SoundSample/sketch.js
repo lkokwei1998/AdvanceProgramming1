@@ -22,21 +22,15 @@ function draw() {
     rect(0, 0, width, height);
     // The getLevel() method returns values between 0 and 1,
     // so map() is used to convert the values to larger numbers
-    scale = map(amp.getLevel(), 0, 0.5, 10, width);
+    scale = map(amp.getLevel(), 0, 0.5, 1, width);
     // Draw the circle based on the volume
-    fill(91, 54, 150, 20);
+    fill(91, 54, 150);
     rect(width / 2, height / 2, scale, scale);
     // ellipse(width / 2, height / 2, width, width);
 
     scale = map(amp.getLevel(), 0, 0.5, 10, width);
     // Draw the circle based on the volume
-    fill(119, 54, 150, 30);
-    ellipse(width / 2, height / 2, scale, scale);
-    // ellipse(width / 2, height / 2, width, width);
-    
-    scale = map(amp.getLevel(), 0, 0.5, 10, width);
-    // Draw the circle based on the volume
-    fill(119, 54, 150, 30);
+    fill(119, 54, 150);
     ellipse(width / 2, height / 2, scale, scale);
     // ellipse(width / 2, height / 2, width, width);
 
